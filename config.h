@@ -87,14 +87,16 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[]  = { "microsoft-edge-dev", NULL };
 
-static const char *upvol[]   = { "/home/david/scripts/vol-up.sh",  NULL };
-static const char *downvol[] = { "/home/david/scripts/vol-down.sh",  NULL };
-static const char *mutevol[] = { "/home/david/scripts/vol-toggle.sh",  NULL };
+static const char *upvol[]   = { "/home/zorroki/scripts/vol-down.sh",  NULL };
+static const char *downvol[] = { "/home/zorroki/scripts/vol-down.sh",  NULL };
+static const char *mutevol[] = { "/home/zorroki/scripts/vol-toggle.sh",  NULL };
 
 static const char *wpcmd[]  = { "/home/david/scripts/wp-change.sh", NULL };
 static const char *sktogglecmd[]  = { "/home/david/scripts/sck-tog.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x24", NULL };
+static const char *previouswallpapercmd[] = {"variety","-p",NULL};
+static const char *nextwallpapercmd[] = {"variety","-n",NULL};
 
 static const char *setcolemakcmd[]  = { "/home/david/scripts/setxmodmap-colemak.sh", NULL };
 static const char *setqwertycmd[]  = { "/home/david/scripts/setxmodmap-qwerty.sh", NULL };
