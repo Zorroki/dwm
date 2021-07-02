@@ -87,7 +87,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[]  = { "microsoft-edge-dev", NULL };
 
-static const char *upvol[]   = { "/home/zorroki/scripts/vol-down.sh",  NULL };
+static const char *upvol[]   = { "/home/zorroki/scripts/vol-up.sh",  NULL };
 static const char *downvol[] = { "/home/zorroki/scripts/vol-down.sh",  NULL };
 static const char *mutevol[] = { "/home/zorroki/scripts/vol-toggle.sh",  NULL };
 
@@ -97,6 +97,7 @@ static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x24", NULL };
 static const char *previouswallpapercmd[] = {"variety","-p",NULL};
 static const char *nextwallpapercmd[] = {"variety","-n",NULL};
+static const char *favoritewallpapercmd[] = {"variety","-f",NULL};
 
 static const char *setcolemakcmd[]  = { "/home/david/scripts/setxmodmap-colemak.sh", NULL };
 static const char *setqwertycmd[]  = { "/home/david/scripts/setxmodmap-qwerty.sh", NULL };
@@ -114,6 +115,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,    XK_m,                    spawn,          {.v = setcolemakcmd } },
 	{ MODKEY|ShiftMask,    XK_p,                    spawn,          {.v = suspendcmd } },
 	{ MODKEY|ControlMask,  XK_s,                    spawn,          {.v = sktogglecmd } },
+	{ MODKEY|ControlMask,  XK_n,                    spawn,          {.v = nextwallpapercmd } },
+	{ MODKEY|ControlMask,  XK_p,                    spawn,          {.v = previouswallpapercmd } },
+	{ MODKEY|ControlMask,  XK_f,                    spawn,          {.v = favoritewallpapercmd } },
 	{ 0,                   XF86XK_AudioLowerVolume, spawn,          {.v = downvol } },
 	{ 0,                   XF86XK_AudioMute,        spawn,          {.v = mutevol } },
 	{ 0,                   XF86XK_AudioRaiseVolume, spawn,          {.v = upvol   } },
