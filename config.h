@@ -55,6 +55,7 @@ static const Rule rules[] = {
 	{ "quemu-system-i386",	NULL,       	NULL,       	0,          	1,           	-1 },
 	{ "Microsoft-edge-dev",	NULL,       	NULL,       	1 << 1,     	0,           	-1 },
 	{ "notion-snap",	NULL,       	NULL,       	1 << 2,     	0,           	-1 },
+	{ "st-256color",	NULL,		"spt",		1 << 3,		0,		-1 },
 	{ "kdeconnect.app",	NULL,		NULL,		1 << 7,		0,		-1 },
 };
 
